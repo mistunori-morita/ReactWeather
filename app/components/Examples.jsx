@@ -5,7 +5,7 @@ var Examples = (props) => {
   return (
     <div>
       <h3>Exmaple</h3>
-      <p>test gommit</p>
+      <p>Welocome to examples page!</p>
     </div>
   )
 };
