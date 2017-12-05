@@ -51,3 +51,20 @@ app.listen(PORT,function(){
 - git remote -vで確認 herokuが出ていたらOk
 - その後、`git push heroku master`でプッシュ
 - heroku openでデプロイ完了
+
+
+### localhost修正
+- 現状だとlocalhostがバグっているので修正
+
+```js
+app.use(function (req,res,next){
+  if(req.headers['x-forwarded-proto'] === 'https') {
+    res.redirect('http://' + req.hostname + req.url);
+
+  }else{
+    next();
+  }
+});
+```
+
+- 変更後 node server.js で再起動してlocalhost:xxxを叩くとみれる
