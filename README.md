@@ -68,3 +68,5 @@ app.use(function (req,res,next){
 ```
 
 - 変更後 node server.js で再起動してlocalhost:xxxを叩くとみれる
+- デプロイ時はherokuにもコマンドを反映させる
+- git push heroku master
