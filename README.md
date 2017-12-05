@@ -45,3 +45,9 @@ app.listen(PORT,function(){
 });
 
 ```
+
+- 変更後,git add ,git commit
+- heroku create
+- git remote -vで確認 herokuが出ていたらOk
+- その後、`git push heroku master`でプッシュ
+- heroku openでデプロイ完了
