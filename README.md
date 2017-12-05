@@ -70,3 +70,7 @@ app.use(function (req,res,next){
 - 変更後 node server.js で再起動してlocalhost:xxxを叩くとみれる
 - デプロイ時はherokuにもコマンドを反映させる
 - git push heroku master
+
+
+### sass
+- `npm install sass-loader@4.1.1 node-sass --save-dev`でインストール
